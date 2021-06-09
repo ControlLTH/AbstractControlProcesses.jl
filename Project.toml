@@ -1,0 +1,4 @@
+name = "AbstractControlProcesses"
+uuid = "d0d8031c-1ca7-4517-a182-a2551ca8592c"
+authors = ["Albin Heimerson <albin.heimerson@control.lth.se>"]
+version = "0.1.0"
