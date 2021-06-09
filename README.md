@@ -1,5 +1,5 @@
 # AbstractControlProcesses
-An interface for defining simulated and physical processes to allow for easy swapping between simulated and physical as well as swapping between different control strategies.
+Defines an interface in Julia for interacting with simulated and physical processes.
 
 ## Interface
 
