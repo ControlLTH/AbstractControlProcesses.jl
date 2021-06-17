@@ -140,7 +140,7 @@ measure(p::AbstractProcess) = error("Function not implemented for $(typeof(p))")
 This function is called before any control or measurement operations are performed. During a call to `initialize`, one might set up external communications etc. After control is done,
 the function [`finalize`](@ref) is called.
 """
-initialize(p::AbstractProcess) = error("Function not implemented for $(typeof(p))")
+initialize(p::AbstractProcess) = nothing
 
 """
     finalize(P::AbstractProcess)
@@ -148,7 +148,7 @@ initialize(p::AbstractProcess) = error("Function not implemented for $(typeof(p)
 This function is called after any control or measurement operations are performed. During a call to `finalize`, one might finalize external communications etc. Before control is done,
 the function [`initialize`](@ref) is called.
 """
-Base.finalize(p::AbstractProcess) = error("Function not implemented for $(typeof(p))")
+Base.finalize(p::AbstractProcess) = nothing
 
 
 end # module
