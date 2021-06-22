@@ -123,14 +123,15 @@ bias(p::AbstractProcess) = error("Function not implemented for $(typeof(p))")
 """
     control(P::AbstractProcess, u)
 
-Send a control signal to the process. `u` must have dimension equal to `num_inputs(P)`
+Send a control signal `u` to the process where `u` should have dimension `num_inputs(P)`.
 """
-control(p::AbstractProcess, u) = error("Function not implemented for $(typeof(p))")
+control(p::AbstractProcess, u::AbstractVector) = error("Function not implemented for $(typeof(p))")
+control(p::AbstractProcess, u::Number) = control(p, [u])
 
 """
     y = measure(P::AbstractProcess)
 
-Return a measurement from the process. `y` has length `num_outputs(P)`
+Return a measurement from the process, `y` has length `num_outputs(P)`.
 """
 measure(p::AbstractProcess) = error("Function not implemented for $(typeof(p))")
 
