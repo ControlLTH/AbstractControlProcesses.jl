@@ -1,7 +1,7 @@
 name = "AbstractControlProcesses"
 uuid = "d0d8031c-1ca7-4517-a182-a2551ca8592c"
 authors = ["Albin Heimerson <albin.heimerson@control.lth.se>", "Mattias Fält", "Fredrik Bagge Carlson"]
-version = "0.1.0"
+version = "0.2.0"
 
 [compat]
 julia = "1"
