@@ -151,5 +151,12 @@ the function [`initialize`](@ref) is called.
 """
 Base.finalize(p::AbstractProcess) = nothing
 
+"""
+    show(io::IO, p::AbstractProcess)
+
+To make the types show a bit nicer by default and not include all the
+struct information.
+"""
+Base.show(io::IO, p::AbstractProcess) = print(io, "$(typeof(p))()")
 
 end # module
